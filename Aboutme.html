@@ -6,7 +6,6 @@
     </head>
     <style>
     ul{list-style-type: square;}
-    h1{outline-style: dotted;}
     h1 {
         color: white;
         font-family: verdana;
@@ -27,8 +26,8 @@
         font-family: verdana;
         font-size: 40px;}
     </style>    
-    <body>
-        <header style="background-color: blueviolet;">
+    <body style="border: 30px solid rgb(0, 0, 0);">
+        <header style="background-color: blueviolet; border: 40px solid rgb(2, 157, 136);">
             <h1>ABOUT ME</h1>
             <nav>
                 <button class = 'bt1' type="button" onclick="window.location.href='#Bio'"style="width: 150px; height: 50px; font-size: 28px;">Bio</button>
@@ -37,12 +36,12 @@
                 <button class = 'bt4' type="button" onclick="window.location.href='#Contact'"style="width: 150px; height: 50px; font-size: 28px;">Contact</button>
             </nav>
         </header>
-        <section id = "Bio" style="background-color:rgb(97, 149, 48)">   
+        <section id = "Bio" style="background-color:rgb(97, 149, 48); border: 40px solid rgb(157, 2, 2);">   
             <p>Xin chào tôi tên là Khang(hay còn gọi là Daka).Tôi 13 hoặc 14 tuổi.<br><br><u>Tôi sống tại TP.HCM, Việt Nam.</u></p>
             <p>Đây là mặt của tôi:</p>
             <img src="me.jpg" alt="Me" width="320" height="240">
         </section>
-        <section id = "Hobbies" style="background-color:chocolate">
+        <section id = "Hobbies" style="background-color:chocolate; border: 40px solid rgb(134, 2, 157);">
             <p>Sở thích của tôi là:</p>
             <ul>
                 <li>Cầu lông</li>
@@ -53,9 +52,9 @@
                 <img src="lap-886x544.png" alt="Lập trình" width="443" height="272">
             </ul>
         </section>
-        <section id = "Form">
+        <section id = "Form" style="background-color: darkblue; border: 40px solid rgb(157, 2, 111);" >
             
-            <form style="background-color: darkblue;">
+            <form>
                 <fieldset>
                     <legend>Điền thông tin của bạn</legend>
                     <label for="name">Họ tên</label>
@@ -78,16 +77,25 @@
                         <option value="phap">Pháp</option>
                     </select>
                     <br>
+                    
                     <label for="tel">Số điện thoại</label>
-                    <input type = "tel" id = 'tel' placeholder="0123456789"style="height: 40px; font-size: 28px;">
-
+                    <input type = "tel" id = 'tel' placeholder="0123456789"style="height: 40px; font-size: 28px;"><br>
                     
+                    <label for="email">Email</label>
+                    <input type = "email" id = 'email' placeholder="abc@gmail.com"style="height: 40px; font-size: 28px;"><br>
 
-                    
+                    <label>Favorite</label><br>
+                    <input type = "checkbox" id = 'box1' name="box"style="height: 30px;width: 30px; font-size: 28px;">
+                    <label for="box1">sleep</label><br>
+                    <input type = "checkbox" id = 'box2' name ="box"style="height: 30px;width: 30px; font-size: 28px;">
+                    <label for="box2">play game</label><br>
+                    <input type = "checkbox" id = 'box3' name ="box"style="height: 30px;width: 30px; font-size: 28px;">
+                    <label for="box3">write code</label><br>
+                    <input type = "submit"style="font-size: 38px;">
                 </fieldset>
             </form>
         </section>
-        <footer id="Contact" style="background-color:crimson">
+        <footer id="Contact" style="background-color:crimson; border: 40px solid rgb(144, 157, 2);">
             <h1>Liên hệ</h1>
             <ul>
                 <li><b>Số điện thoại: </b>0123456789</li>
