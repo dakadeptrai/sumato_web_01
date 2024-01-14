@@ -26,6 +26,19 @@
     form{color: white;
         font-family: verdana;
         font-size: 40px;}
+    .scared{display:none;color: rgb(17, 17, 17);font-size: 70px}
+    .me:hover + .scared{display:block;}
+    .sport{display:none;color: rgb(17, 17, 17);font-size: 70px}
+    .Caulong:hover + .sport{display:block;}
+    .game{display:none;color: rgb(17, 17, 17);font-size: 70px}
+    .Roblox:hover + .game{display:block;}
+    .hobby{display:none;color: rgb(17, 17, 17);font-size: 70px}
+    .Laptrinh:hover + .hobby{display:block;}
+    ::placeholder{color:rgb(33, 12, 104)}
+    ::selection {
+    color: red;
+    background: green;
+    }
     </style>    
     <body style="background-color: rgb(217, 188, 107);border: 60px double rgb(215, 139, 8);">
         <header style="background-color: blueviolet; border: 40px ridge rgb(2, 157, 136);border-radius: 60px">
@@ -40,17 +53,21 @@
         <section id = "Bio" style="background-color:rgb(97, 149, 48); border: 40px ridge rgb(157, 2, 2);border-radius: 60px">   
             <p style="padding-left: 30px">Xin chào tôi tên là Khang(hay còn gọi là Daka).Tôi 13 hoặc 14 tuổi.<br><br><u>Tôi sống tại TP.HCM, Việt Nam.</u></p>
             <p style="padding-left: 30px">Đây là mặt của tôi:</p>
-            <img src="me.jpg" alt="Me" width="320" height="240" style="padding-left: 60px">
+            <img src="me.jpg" alt="Me" width="320" height="240" class="me" style="padding-left: 60px">
+            <p style="padding-left: 30px"class="scared">HEHE</p>
         </section>
         <section id = "Hobbies" style="background-color:chocolate; border: 40px ridge rgb(134, 2, 157);border-radius: 60px">
             <p style="padding-left: 30px">Sở thích của tôi là:</p>
             <ul>
                 <li>Cầu lông</li>
-                <img src="caulong-700x450.jpg" alt="Caulong" width="450" height="225">
+                <img src="caulong-700x450.jpg" alt="Caulong" class="Caulong" width="450" height="225">
+                <p style="padding-left: 30px"class="sport">Caulong</p>
                 <li>Chơi game</li>
-                <img src="roblox1450x850.jpg" alt="Roblox" width="290" height="170">
+                <img src="roblox1450x850.jpg" alt="Roblox" class="Roblox" width="290" height="170">
+                <p style="padding-left: 30px"class="game">Roblox</p>
                 <li>Lập trình</li>
-                <img src="lap-886x544.png" alt="Lập trình" width="443" height="272">
+                <img src="lap-886x544.png" alt="Lập trình" class="Laptrinh" width="443" height="272">
+                <p style="padding-left: 30px"class="hobby">Coding</p>
             </ul>
         </section>
         <section id = "Form" style="background-color: darkblue; border: 40px ridge rgb(157, 2, 111);border-radius: 60px" >
