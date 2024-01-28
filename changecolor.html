@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title> bảng cửu chương </title>
+</html>
+<body>
+    <script>
+        function UCLN(a, b) {
+        if (b === 0){
+            return a;
+        }
+        return UCLN(b, a % b);
+    } 
+        function Tongphanso(){
+                var Tuso1 = parseInt(document.getElementById('Number1').value);
+                var Mauso1 = parseInt(document.getElementById('Number2').value);
+                var Tuso2 = parseInt(document.getElementById('Number3').value);
+                var Mauso2 = parseInt(document.getElementById('Number4').value);
+
+                
+                var Boichung = Mauso1 * Mauso2;
+
+                var Tusomoi1 = Tuso1 *Mauso2;
+                var Tusomoi2 = Tuso2 *Mauso1;
+
+                var Tongtuso = Tusomoi1 + Tusomoi2;
+                
+                var UCL = UCLN(Tongtuso,Boichung);
+                Tongtuso /= UCL;
+                Boichung /= UCL;
+                if (Tongtuso == 0){
+                    return document.getElementById('output').innerHTML = 0;
+                }
+                if (Boichung == 0) {
+                    return document.getElementById('output').innerHTML = -1;
+                }
+                var inn = "";
+                inn += Tongtuso + ' / '+ Boichung;
+                console.log(inn)
+                document.getElementById('output').innerHTML = inn;
+        }
+        function Hieuphanso(){
+                var Tuso1 = parseInt(document.getElementById('Number1').value);
+                var Mauso1 = parseInt(document.getElementById('Number2').value);
+                var Tuso2 = parseInt(document.getElementById('Number3').value);
+                var Mauso2 = parseInt(document.getElementById('Number4').value);
+
+                
+
+                var Boichung = Mauso1 * Mauso2;
+
+                var Tusomoi1 = Tuso1 *Mauso2;
+                var Tusomoi2 = Tuso2 *Mauso1;
+
+                var Hieutuso = Tusomoi1 - Tusomoi2;
+                
+                var UCL = UCLN(Hieutuso,Boichung);
+                Hieutuso /= UCL;
+                Boichung /= UCL;
+                if (Hieutuso == 0){
+                    return document.getElementById('output').innerHTML = 0;
+                }
+                if (Boichung == 0) {
+                    return document.getElementById('output').innerHTML = -1;
+                }
+                var inn = "";
+                inn += Hieutuso + ' / '+ Boichung;
+                console.log(inn)
+                document.getElementById('output').innerHTML = inn;
+            }
+        function Nhanphanso(){
+                var Tuso1 = parseInt(document.getElementById('Number1').value);
+                var Mauso1 = parseInt(document.getElementById('Number2').value);
+                var Tuso2 = parseInt(document.getElementById('Number3').value);
+                var Mauso2 = parseInt(document.getElementById('Number4').value);
+
+                var Tusomoi = Tuso1 *Tuso2;
+                var Mausomoi = Mauso1*Mauso2;
+                
+                var UCL = UCLN(Tusomoi,Mausomoi);
+                Tusomoi /= UCL;
+                Mausomoi /= UCL;
+                if (Tusomoi == 0){
+                    return document.getElementById('output').innerHTML = 0;
+                }
+                if (Mausomoi == 0) {
+                    return document.getElementById('output').innerHTML = -1;
+                }
+                var inn = "";
+                inn += Tusomoi + ' / '+ Mausomoi;
+                console.log(inn)
+                document.getElementById('output').innerHTML = inn;
+            }
+        function Chiaphanso(){
+                var Tuso1 = parseInt(document.getElementById('Number1').value);
+                var Mauso1 = parseInt(document.getElementById('Number2').value);
+                var Tuso2 = parseInt(document.getElementById('Number3').value);
+                var Mauso2 = parseInt(document.getElementById('Number4').value);
+
+                var Tusomoi = Tuso1 *Mauso2;
+                var Mausomoi = Mauso1*Tuso2;
+                
+                var UCL = UCLN(Tusomoi,Mausomoi);
+                Tusomoi /= UCL;
+                Mausomoi /= UCL;
+                if (Tusomoi == 0){
+                    return document.getElementById('output').innerHTML = 0;
+                }
+                if (Mausomoi == 0) {
+                    return document.getElementById('output').innerHTML = -1;
+                }
+                var inn = "";
+                inn += Tusomoi + ' / '+ Mausomoi;
+                console.log(inn)
+                document.getElementById('output').innerHTML = inn;
+            }
+    </script>
+    <label for="id">Chọn một số cho tử số:</label>
+    <input type="number" id="Number1" > <br>
+    <label for="id">Chọn một số cho mẫu số:</label>
+    <input type="number" id="Number2" > <br>
+    <label for="id">Chọn một số cho tử số:</label>
+    <input type="number" id="Number3" > <br>
+    <label for="id">Chọn một số cho mẫu số:</label>
+    <input type="number" id="Number4" > <br>
+    <button onclick="Tongphanso()">submit and print plus</button> <br>
+    <button onclick="Hieuphanso()">submit and print minus</button> <br>
+    <button onclick="Nhanphanso()">submit and print time</button> <br>
+    <button onclick="Chiaphanso()">submit and print divine</button> <br>
+    <p id = 'output'></p>
+</body>
