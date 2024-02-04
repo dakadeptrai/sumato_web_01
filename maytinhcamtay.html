@@ -3,76 +3,46 @@
     <meta charset="UTF-8">
     <title> calculator </title>
     <head>
-        <style>
-            .container{
-                text-align: center;
-                width: 300px;
-                margin: auto ;
-                padding: 20px ;
-                background-color: rgb(90, 41, 41);
-            }
-
-            #result{
-                width: 90%;
-                height: 40px;
-                font-size: 30px;
-                margin-bottom: 10px;
-            }
-            button{
-                width: 60px;
-                height: 60px;
-                padding: 10px;
-                margin: 4px;
-                color: white;
-                border-radius: 20%;
-            }
-            .x{
-                background-color: rgb(219, 203, 26);
-            }
-            .y{
-                background-color: black;
-            }
-            .z{
-                background-color: darkblue;
-            }
-        </style>
+        <link rel="stylesheet" href="maytinhcamtay.css">
     </head>
     <body>
         <div class="container">
             <input type = "text" id = 'result' readonly>
+            <button onclick ='mmsave()' class="buttonx">MS</button>
+            <button onclick ='mmrecall()' class="buttonx">MR</button>
             <button onclick ='add("( ")' class="x">(</button>
             <button onclick ='add(") ")' class="x">)</button>
-            <button onclick ='' class="x"><<</button>
-            <button onclick ='clearall()' class="x">C</button>
-            <button onclick ='add("1 ")'class="y">1</button>
-            <button onclick ='add("2 ")'class="y">2</button>
-            <button onclick ='add("3 ")'class="y">3</button>
-            <button onclick ='add("/ ")'class="z">/</button>
-            <button onclick ='add("4 ")'class="y">4</button>
-            <button onclick ='add("5 ")'class="y">5</button>
-            <button onclick ='add("6 ")'class="y">6</button>
-            <button onclick ='add("* ")'class="z">*</button>
-            <button onclick ='add("7 ")'class="y">7</button>
-            <button onclick ='add("8 ")'class="y">8</button>
-            <button onclick ='add("9 ")'class="y">9</button>
-            <button onclick ='add("- ")'class="z">-</button>
-            <button onclick ='add("0 ")'class="y">0</button>
-            <button onclick ='add(". ")'class="x">.</button>
-            <button onclick =''class="x">=</button>
-            <button onclick ='add("+ ")'class="z">+</button>
-        </div>
-        <script>
-            var resultElement = document.getElementById('result');
-            var clone = ''
-            function add(element){
-                clone += element;
-                resultElement.value = clone
-            }
-            function clearall(){
-                resultElement.value = ''
-                clone = ''
-            }
 
-        </script>
+            <button onclick ='del()' class="x"><<</button>
+            <button onclick ='clearall()' class="x">C</button>
+            <button onclick ='add("/")'class="z">/</button>
+            <button onclick ='add("*")'class="z">*</button>
+
+            <button onclick ='add("1")'class="y">1</button>
+            <button onclick ='add("2")'class="y">2</button>
+            <button onclick ='add("3")'class="y">3</button>
+            <button onclick ='add("**")'class="z">^</button>
+
+            <button onclick ='add("4")'class="y">4</button>
+            <button onclick ='add("5")'class="y">5</button>
+            <button onclick ='add("6")'class="y">6</button>
+            <button onclick ='add("√")'class="z">√</button> 
+
+            <button onclick ='add("7")'class="y">7</button>
+            <button onclick ='add("8")'class="y">8</button>
+            <button onclick ='add("9")'class="y">9</button>
+            <button onclick ='add("-")'class="z">-</button>
+
+            <button onclick ='add("0")'class="y">0</button>
+            <button onclick ='add(".")'class="x">.</button>
+            <button onclick ='calculate()'class="x">=</button>
+            <button onclick ='add("+")'class="z">+</button>
+            
+        </div>
+        <script src="maytinhcamtay.js"></script>
     </body>
+    <footer>
+        &copy; daka.
+        <a href="Aboutme.html">about me</a>
+    </footer>
 </html>

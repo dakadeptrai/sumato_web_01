@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title> tinh phuong trinh </title>
+    <head>
+    </head>
+    <body>
+        <h1>Giai Phuong Trinh Bac 1</h1>
+        <label for="id">He so a:</label>
+        <input type="number" id="Number1" > <br>
+        <label for="id">He so b:</label>
+        <input type="number" id="Number2" > <br>
+        <button onclick ='phtrinh()'>Xac Nhan</button> <br>
+        <p type = "text" id = 'result'></p>
+        <script>
+            function phtrinh(){
+                var a = Number(document.getElementById('Number1').value);
+                var b = Number(document.getElementById('Number2').value);
+                console.log(a);
+                if(a==0 && b != 0){
+                    document.getElementById('result').innerHTML = 'Phương trình vô nghiệm do (a = 0 và b khác 0)';
+                }
+                else if(a==0 && b == 0){
+                    document.getElementById('result').innerHTML = 'Phương trình vô số nghiệm do (a = 0 và b = 0)';
+                }
+                else{
+                    var x = -b/a;
+                    document.getElementById('result').innerHTML = 'Phương trình có nghiệm x = ' + x;
+                }
+            }
+            
+        </script>
+    </body>
