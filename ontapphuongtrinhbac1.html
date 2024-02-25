@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title> tinh phuong trinh </title>
+    <head>
+    </head>
+    <body>
+        <style>
+            ul{
+                background-color: rgb(233, 229, 229);
+                padding: 10px
+            }
+            li{
+                margin: 10px;
+            }
+            label{
+                margin-right: 60px;
+            }
+
+        </style>
+        <h1>Giai phuong trinh bac nhat</h1>
+        <ul>
+            <li>Phuong trinh bac nhat co dang <b>ax + b = 0</b> (a khac 0)</li>
+            <li>Nhap he so <b>a, b</b> de tien hanh giai phuong trinh</li>
+        </ul>
+        <label for="id"><b>He so a:</b></label>
+        <input type = 'number' id = 'id'><br><br>
+        <label for="id2"><b>He so b:</b></label>
+        <input type = 'number' id = 'id2'><br>
+        <button onclick="phtrinh()" style="background-color: green; color: white;padding: 10px;margin-top: 30px;">Xac nhan</button><br>
+        <p type="text" id='result' style="background-color: rgb(141, 200, 141); color: green ;padding: 10px;margin-top: 10px;"></p>
+        <script>
+            function phtrinh(){
+                var a = Number(document.getElementById('id').value);
+                var b = Number(document.getElementById('id2').value);
+                console.log(a)
+                if (a==0 && b != 0){
+                    document.getElementById('result').innerHTML='Phuong trinh vo nghiem do(a = 0 va b khac 0)';
+                }
+                else if (a==0 && b == 0){
+                    document.getElementById('result').innerHTML='Phuong trinh vo so nghiem do(a = 0 va b = 0)';
+                }
+                else{
+                    var x = -b/a;
+                    document.getElementById('result').innerHTML='Phuong trinh co nghiem x = '+ x;
+                }
+            }
+        </script>
+    </body>
