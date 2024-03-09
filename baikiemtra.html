@@ -10,29 +10,27 @@
         <li>Đơn thức bậc nhất có dạng: ax+b=c</li>
         <li>nhập vào 2 đơn thức và x0 để tiến hành</li>
     </ul>
-    <form>
-        <div class = "input-group">
-            <label for="ax1">Đơn thức 1:</label>
-            <input type="text" id="ax1" name="ax1" placeholder="a">
-            <span>x+</span>
-            <input type="text" id="b1" name="b1" placeholder="b">
-            <span>=</span>
-            <input type="text" id="c1" name="c1" placeholder="c">
-        </div>
-        <div class="input-group">
-            <label for="ax1">Đơn thức 2:</label>
-            <input type="text" id="ax2" name="ax2" placeholder="a">
-            <span>x+</span>
-            <input type="text" id="b2" name="b2" placeholder="b">
-            <span>=</span>
-            <input type="text" id="c2" name="c2" placeholder="c">
-        </div>
-        <div class = 'input-group'>
-            <label for="x0">Giá trị x0:</label>
-            <input type="text" id="x0" name="x0" placeholder="x0">
-        </div>
-        <button type="submit">Kết quả</button>
-    </form>
+    <div class = "input-group">
+        <label for="ax1">Đơn thức 1:</label>
+        <input type="text" id="ax1" name="ax1" placeholder="a">
+        <span>x+</span>
+        <input type="text" id="b1" name="b1" placeholder="b">
+        <span>=</span>
+        <input type="text" id="c1" name="c1" placeholder="c">
+    </div>
+    <div class="input-group">
+        <label for="ax1">Đơn thức 2:</label>
+        <input type="text" id="ax2" name="ax2" placeholder="a">
+        <span>x+</span>
+        <input type="text" id="b2" name="b2" placeholder="b">
+        <span>=</span>
+        <input type="text" id="c2" name="c2" placeholder="c">
+    </div>
+    <div class = 'input-group'>
+        <label for="x0">Giá trị x0:</label>
+        <input type="text" id="x0" name="x0" placeholder="x0">
+    </div>
+    <button onclick="printt()">Kết quả</button>
     
     <div class="output">
         <h2>Kết quả</h2>
@@ -42,6 +40,5 @@
         <span>dòng 4:</span><p id="result4"></p>
         <span>dòng 5:</span><p id="result5"></p>
     </div>
-    <script src="">
-    </script> 
+    <script src="baikiemtra.js"></script>
 </body>
