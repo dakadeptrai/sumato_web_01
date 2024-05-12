@@ -1,0 +1,7 @@
+SHIFT + 1 sau do an ENTER se hien ra cau truc co ban cua html
+neu nhieu the giong nhau chung ta co the su dung: 
+                                            <ten the> * <so luong the>
+VD: li*3 ==> tao ra 3 the li
+Neu muon tao ra 2 the long vao nhau
+Cu phap:
+<ten the 1> * <so luong the> > <ten the 2> * <so luong the>

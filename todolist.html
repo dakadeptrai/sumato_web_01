@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>About me</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="todolist.css">
+    </head>
+    <body>
+        <h3>ToDo List</h3><br>
+        <h1>ToDo List</h1>
+        <label for="Start-day">Start: </label>
+        <input type="date" id="Start-day">
+        <label for="End-day">End: </label>
+        <input type="date" id="End-day">
+        <div class="container">
+            <span class="item"></span>
+            <input type="text" id="Newtask" class="item" placeholder="New Task">
+            <button class="item" id="Add" onclick="addd()">Add</button> 
+            <span></span><br>
+        </div>
+        <table id = 'taskTable'>
+            <thead id = 'taskHead'>
+                <tr>
+                    <th>No.</th>
+                    <th>Check</th>
+                    <th>Todo Item</th>
+                    <th>Start date</th>
+                    <th>End date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id = 'taskList'>
+            </tbody>
+        </table>
+        <script src="todolist.js"></script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<script>
+    const mang=[1,2,3,4,5];
+    var tong = 0
+    for (var i = 0; i < mang.length;i++){
+        tong += mang[i]
+    }
+    console.log("Tong cua mang tren la: "+tong)
+    const fruit=["cam","tao","cam","chuoi","quyt"]
+    for(var i = 0; i < fruit.length;i++){
+        for(var z = 0; z < i;z++){
+            if (fruit[i] == fruit[z]){
+                fruit.splice(z,1)
+            }   
+        }
+    }
+    console.log("mang sau khi loai bo trung lap: "+fruit)
+    const fruitx = [1,2,3,4,4,3,2,1]
+    const fruit2=[];
+    for(var i = fruitx.length -1; i >= 0;i = i - 1){
+        fruit2.push(fruitx[i]);
+        
+    }
+    function check(){
+        for(var z = 0; z < fruitx.length/2;z++){
+            if(fruit2[i] !== fruitx[i]){
+                return false
+            }
+    }
+    return true
+    }
+    const checkx = check()
+    console.log(fruit2)
+    console.log(checkx)
+    function isPrime(n) {
+     if (n <= 1) {
+        return false;
+    }
+    if (n % 2 === 0) {
+        return n === 2;
+    }
+    for (let i = 3; i * i <= n; i += 2) {
+        if (n % i === 0) {
+        return false;
+        }
+    }
+    return true;
+    }
+    const checkx2 = [];
+    for(i = 0 ; i < fruitx.length;i++){
+        if(isPrime(fruitx[i])){
+            checkx2.push(fruitx[i]);
+        }
+    }
+    function equal(num) {
+    return num===2
+    }
+    const array = [2, 3,4,2,5,7,2,8,2,9];
+    const quantityArr = array.filter(equal)
+    console.log("số lần xuất hiện của 2:", quantityArr.length); 
+
+</script>
